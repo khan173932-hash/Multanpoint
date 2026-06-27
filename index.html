@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#FBF6E9" />
+<title>Multanpoint — Premium Mangoes from Multan · Taste ‖ Health ‖ Versatility</title>
+<meta name="description" content="Multanpoint brings the ultra-quality mangoes of Multan — Chaunsa, Sindhri, Anwar Ratol, Langra & Dasehri. Hand-picked, sun-ripened and delivered farm-fresh with FREE shipment all over Pakistan." />
+<meta name="keywords" content="Multanpoint, Multan mangoes, premium mangoes Pakistan, Chaunsa, Sindhri, Anwar Ratol, Langra, Dasehri, mango gift box, buy mangoes online Pakistan, free shipment" />
+<meta property="og:title" content="Multanpoint — Taste the King of Fruits from the City of Saints" />
+<meta property="og:description" content="Ultra-quality, sun-ripened Multan mangoes delivered farm-fresh across Pakistan. Free shipment, every order." />
+<meta property="og:type" content="website" />
+
+<!-- Premium fonts: Clash Display + General Sans + Satoshi (Fontshare) -->
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700,500&f[]=general-sans@400,500,600,700&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+
+<link rel="icon" href="assets/logo.png" />
+<link rel="stylesheet" href="style.css" />
+
+<script type="application/ld+json">
+{ "@context":"https://schema.org","@type":"Organization","name":"Multanpoint",
+  "slogan":"Taste · Health · Versatility",
+  "description":"Premium Multan mangoes — Chaunsa, Sindhri, Anwar Ratol and more, delivered farm-fresh across Pakistan with free shipment.",
+  "url":"https://multanpoint.com",
+  "telephone":"+92-300-8431947",
+  "email":"khan.hashim09@gmail.com",
+  "address":{"@type":"PostalAddress","addressLocality":"Multan","addressRegion":"Punjab","addressCountry":"PK"} }
+</script>
+</head>
+
+<body>
+<!-- Animated background -->
+<div class="bg-canvas" aria-hidden="true"></div>
+<div class="bg-blob bg-blob--1" aria-hidden="true"></div>
+<div class="bg-blob bg-blob--2" aria-hidden="true"></div>
+<div class="bg-blob bg-blob--3" aria-hidden="true"></div>
+
+<!-- Custom cursor -->
+<div class="cursor-ring" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<!-- Scroll progress -->
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ========================= PAGE LOADER ========================= -->
+<div class="loader" id="loader">
+  <img src="assets/leaf.svg" class="loader__leaf" style="top:14%;left:12%" aria-hidden="true" />
+  <img src="assets/leaf.svg" class="loader__leaf" style="bottom:16%;right:14%;transform:rotate(180deg)" aria-hidden="true" />
+  <div class="loader__inner">
+    <div class="loader__mark"><span>Multan</span><span class="gold">point</span></div>
+    <img src="assets/ornament.svg" class="loader__orn" alt="" aria-hidden="true" />
+    <div class="loader__tag">Taste · Health · Versatility</div>
+    <div class="loader__bar"><div class="loader__fill"></div></div>
+    <div class="loader__pct">0%</div>
+  </div>
+</div>
+
+<!-- ========================= ANNOUNCEMENT RIBBON ========================= -->
+<div class="ribbon">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18H21V9h-4l-3-4H5Z"/><circle cx="8" cy="18" r="1.8"/><circle cx="18" cy="18" r="1.8"/></svg>
+  <span><b>FREE Shipment</b> All Over Pakistan</span>
+  <span class="dotsep hide-xs">·</span>
+  <span class="hide-xs">Fresh from the orchards of Multan, the City of Mangoes</span>
+</div>
+
+<!-- ========================= NAVBAR ========================= -->
+<header class="nav" id="nav">
+  <div class="container nav__row">
+    <a href="#home" class="brand" data-scroll aria-label="Multanpoint home">
+      <span class="brand__chip">
+        <img src="assets/logo.png" alt="Multanpoint logo" onerror="this.onerror=null;this.src='assets/mango.svg'" />
+      </span>
+      <span class="brand__text"><b>Multan<span>point</span></b><small>Taste · Health · Versatility</small></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#home" data-scroll>Home</a>
+      <a href="#shop" data-scroll>Shop</a>
+      <a href="#story" data-scroll>Heritage</a>
+      <a href="#gallery" data-scroll>Gallery</a>
+      <a href="#contact" data-scroll>Contact</a>
+    </nav>
+
+    <div class="nav__tools">
+      <button class="icon-btn hide-sm" data-search-open aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      </button>
+      <button class="icon-btn hide-sm" aria-label="Account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2.5 3h2l2.2 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21.5 7H6"/></svg>
+        <span class="badge" id="cartBadge" style="display:none">0</span>
+      </button>
+      <a href="#shop" data-scroll class="btn btn--primary magnetic nav__cta hide-sm">Order Now</a>
+      <button class="icon-btn nav__burger" id="burger" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="drawer" id="drawer">
+  <div class="drawer__scrim"></div>
+  <nav class="drawer__panel" aria-label="Mobile">
+    <button class="icon-btn drawer__close" id="drawerClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <a href="#home" data-scroll>Home</a>
+    <a href="#shop" data-scroll>Shop</a>
+    <a href="#story" data-scroll>Heritage</a>
+    <a href="#gallery" data-scroll>Gallery</a>
+    <a href="#contact" data-scroll>Contact</a>
+    <a href="#shop" data-scroll class="btn btn--primary magnetic" style="margin-top:18px;justify-content:center">Order Mangoes</a>
+  </nav>
+</div>
+
+<!-- Search overlay -->
+<div class="search-ov" id="search">
+  <div class="container" style="width:100%">
+    <button class="icon-btn" id="searchClose" style="margin-left:auto;display:flex" aria-label="Close search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <form id="searchForm">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="searchInput" type="search" placeholder="Search Chaunsa, Sindhri, gift boxes…" />
+    </form>
+    <p class="hint">Popular: Chaunsa · Sindhri · Anwar Ratol · Mango Gift Box</p>
+  </div>
+</div>
+
+<main>
+<!-- ========================= HERO ========================= -->
+<section class="hero" id="home">
+  <span class="hero__ghost" aria-hidden="true">MANGO</span>
+  <img src="assets/dome.svg" class="hero__crest" aria-hidden="true" />
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <span class="hero__badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 8 8 8 8s8-3 8-8V6Z"/></svg>
+        From Multan · The City of Mangoes
+      </span>
+      <h1 class="hero__title">
+        <span class="line"><span>Taste the</span></span>
+        <span class="line"><span class="text-grad">King of Fruits</span></span>
+      </h1>
+      <p class="hero__lead">Hand-picked at dawn from the legendary orchards of Multan, sun-ripened to golden perfection and delivered to your door — with <b>free shipment all over Pakistan</b>.</p>
+      <div class="hero__cta">
+        <a href="#shop" data-scroll class="btn btn--primary magnetic">
+          Shop the Harvest
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#story" data-scroll class="btn btn--ghost magnetic">Our Heritage</a>
+      </div>
+      <div class="hero__trust">
+        <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Ultra-Quality, Hand-Graded</span>
+        <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18 H21 V9 H17 l-3-4 H5 Z"/><circle cx="8" cy="18" r="1.6"/><circle cx="18" cy="18" r="1.6"/></svg> Free Shipment Pakistan-Wide</span>
+        <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v2M5.6 5.6l1.4 1.4M3 12h2M19 12h2M17 7l1.4-1.4M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"/></svg> Naturally Sun-Ripened</span>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <span class="hero__halo" aria-hidden="true"></span>
+      <span class="hero__ring" aria-hidden="true"></span>
+      <img src="assets/leaf.svg" class="float-leaf l1" aria-hidden="true" />
+      <img src="assets/leaf.svg" class="float-leaf l2" aria-hidden="true" />
+      <img src="assets/mango.svg" class="float-mango m1" aria-hidden="true" />
+      <img src="assets/mango.svg" class="float-mango m2" aria-hidden="true" />
+      <img src="assets/mango.svg" class="float-mango m3" aria-hidden="true" />
+      <img src="assets/hero-mango.svg" class="hero__fruit" alt="A premium ripe Multanpoint Chaunsa mango with a fresh-cut half" />
+    </div>
+  </div>
+
+  <a href="#shop" data-scroll class="hero__scrollcue" aria-label="Scroll down">
+    <span class="mouse"></span>
+    Scroll
+  </a>
+</section>
+
+<!-- ========================= MARQUEE ========================= -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <div class="marquee__item"><span>CHAUNSA</span><span>✦</span></div>
+    <div class="marquee__item"><span>SINDHRI</span><span>✦</span></div>
+    <div class="marquee__item"><span>ANWAR RATOL</span><span>✦</span></div>
+    <div class="marquee__item"><span>LANGRA</span><span>✦</span></div>
+    <div class="marquee__item"><span>DASEHRI</span><span>✦</span></div>
+    <div class="marquee__item"><span>GIFT BOXES</span><span>✦</span></div>
+    <div class="marquee__item"><span>CHAUNSA</span><span>✦</span></div>
+    <div class="marquee__item"><span>SINDHRI</span><span>✦</span></div>
+    <div class="marquee__item"><span>ANWAR RATOL</span><span>✦</span></div>
+    <div class="marquee__item"><span>LANGRA</span><span>✦</span></div>
+    <div class="marquee__item"><span>DASEHRI</span><span>✦</span></div>
+    <div class="marquee__item"><span>GIFT BOXES</span><span>✦</span></div>
+  </div>
+</div>
+
+<!-- ========================= FEATURED MANGOES ========================= -->
+<section class="section" id="shop">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow" data-reveal>Our Orchard Picks</span>
+      <h2 class="section__title" data-split>Featured Mangoes</h2>
+      <p class="section__sub" data-reveal>The pride of Multan at the peak of their season — each one graded by hand and packed within hours of harvest.</p>
+    </div>
+
+    <div class="prod-grid" data-reveal-group>
+      <!-- Chaunsa (Multan's signature) -->
+      <article class="card" data-reveal-item>
+        <div class="card__media">
+          <span class="badge-disc">Multan's Pride</span>
+          <button class="card__wish" aria-label="Add Chaunsa to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-9.5-9C1 9 2.5 5 6.5 5 9 5 12 8 12 8s3-3 5.5-3C21.5 5 23 9 21.5 12 19 16.4 12 21 12 21Z"/></svg></button>
+          <img src="assets/mango.svg" alt="Chaunsa mango" style="filter:drop-shadow(0 22px 26px rgba(120,70,10,.3)) hue-rotate(-8deg) saturate(1.15)" />
+          <div class="card__quick"><button data-quick="Chaunsa Mango">Quick View</button></div>
+        </div>
+        <div class="card__body">
+          <p class="card__cat">Honey-Rich · Aromatic</p>
+          <h3 class="card__name">Chaunsa Mango</h3>
+          <div class="card__stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><span>5.0 (512)</span></div>
+          <div class="card__foot">
+            <div class="card__price">Rs 1,650 <small>/ 5 kg</small></div>
+            <button class="card__add magnetic" data-magnetic="0.25" data-add="Chaunsa Mango" aria-label="Add Chaunsa to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sindhri -->
+      <article class="card" data-reveal-item>
+        <div class="card__media">
+          <span class="badge-disc">−15%</span>
+          <button class="card__wish" aria-label="Add Sindhri to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-9.5-9C1 9 2.5 5 6.5 5 9 5 12 8 12 8s3-3 5.5-3C21.5 5 23 9 21.5 12 19 16.4 12 21 12 21Z"/></svg></button>
+          <img src="assets/mango.svg" alt="Sindhri mango" style="filter:drop-shadow(0 22px 26px rgba(120,70,10,.3)) saturate(1.05)" />
+          <div class="card__quick"><button data-quick="Sindhri Mango">Quick View</button></div>
+        </div>
+        <div class="card__body">
+          <p class="card__cat">Honey-Sweet · Fibreless</p>
+          <h3 class="card__name">Sindhri Mango</h3>
+          <div class="card__stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><span>4.9 (320)</span></div>
+          <div class="card__foot">
+            <div class="card__price">Rs 1,499 <small>/ 5 kg</small><del>Rs 1,750</del></div>
+            <button class="card__add magnetic" data-magnetic="0.25" data-add="Sindhri Mango" aria-label="Add Sindhri to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Anwar Ratol -->
+      <article class="card" data-reveal-item>
+        <div class="card__media">
+          <button class="card__wish" aria-label="Add Anwar Ratol to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-9.5-9C1 9 2.5 5 6.5 5 9 5 12 8 12 8s3-3 5.5-3C21.5 5 23 9 21.5 12 19 16.4 12 21 12 21Z"/></svg></button>
+          <img src="assets/mango.svg" alt="Anwar Ratol mango" style="filter:drop-shadow(0 22px 26px rgba(120,70,10,.3)) hue-rotate(6deg) brightness(1.04)" />
+          <div class="card__quick"><button data-quick="Anwar Ratol">Quick View</button></div>
+        </div>
+        <div class="card__body">
+          <p class="card__cat">Small · Intensely Sweet</p>
+          <h3 class="card__name">Anwar Ratol</h3>
+          <div class="card__stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><span>4.8 (276)</span></div>
+          <div class="card__foot">
+            <div class="card__price">Rs 1,890 <small>/ 5 kg</small></div>
+            <button class="card__add magnetic" data-magnetic="0.25" data-add="Anwar Ratol" aria-label="Add Anwar Ratol to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><img src="assets/ornament.svg" alt="" aria-hidden="true" /></div>
+
+<!-- ========================= BEST SELLERS ========================= -->
+<section class="section" style="padding-top:clamp(40px,6vw,80px)">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow" data-reveal>Loved By Thousands</span>
+      <h2 class="section__title" data-split>Best Sellers</h2>
+    </div>
+    <div class="prod-grid" data-reveal-group>
+      <!-- Langra -->
+      <article class="card" data-reveal-item>
+        <div class="card__media">
+          <button class="card__wish" aria-label="Wishlist Langra"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-9.5-9C1 9 2.5 5 6.5 5 9 5 12 8 12 8s3-3 5.5-3C21.5 5 23 9 21.5 12 19 16.4 12 21 12 21Z"/></svg></button>
+          <img src="assets/mango.svg" alt="Langra mango" style="filter:drop-shadow(0 22px 26px rgba(120,70,10,.3)) hue-rotate(28deg) saturate(.95)" />
+          <div class="card__quick"><button data-quick="Langra Mango">Quick View</button></div>
+        </div>
+        <div class="card__body">
+          <p class="card__cat">Tangy-Sweet · Green Skin</p>
+          <h3 class="card__name">Langra Mango</h3>
+          <div class="card__stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><span>4.7</span></div>
+          <div class="card__foot"><div class="card__price">Rs 1,350 <small>/ 5 kg</small></div><button class="card__add magnetic" data-magnetic="0.25" data-add="Langra Mango" aria-label="Add Langra"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button></div>
+        </div>
+      </article>
+      <!-- Dasehri -->
+      <article class="card" data-reveal-item>
+        <div class="card__media">
+          <span class="badge-disc">−10%</span>
+          <button class="card__wish" aria-label="Wishlist Dasehri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-9.5-9C1 9 2.5 5 6.5 5 9 5 12 8 12 8s3-3 5.5-3C21.5 5 23 9 21.5 12 19 16.4 12 21 12 21Z"/></svg></button>
+          <img src="assets/mango.svg" alt="Dasehri mango" style="filter:drop-shadow(0 22px 26px rgba(120,70,10,.3)) brightness(1.1) saturate(.9)" />
+          <div class="card__quick"><button data-quick="Dasehri Mango">Quick View</button></div>
+        </div>
+        <div class="card__body">
+          <p class="card__cat">Fragrant · Buttery</p>
+          <h3 class="card__name">Dasehri Mango</h3>
+          <div class="card__stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><span>4.8</span></div>
+          <div class="card__foot"><div class="card__price">Rs 1,720 <small>/ 5 kg</small><del>Rs 1,910</del></div><button class="card__add magnetic" data-magnetic="0.25" data-add="Dasehri Mango" aria-label="Add Dasehri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button></div>
+        </div>
+      </article>
+      <!-- Gift Box -->
+      <article class="card" data-reveal-item>
+        <div class="card__media">
+          <span class="badge-disc">Gift</span>
+          <button class="card__wish" aria-label="Wishlist Gift Box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-9.5-9C1 9 2.5 5 6.5 5 9 5 12 8 12 8s3-3 5.5-3C21.5 5 23 9 21.5 12 19 16.4 12 21 12 21Z"/></svg></button>
+          <img src="assets/mango.svg" alt="Multan mango gift box" style="filter:drop-shadow(0 22px 26px rgba(120,70,10,.3)) hue-rotate(-4deg)" />
+          <div class="card__quick"><button data-quick="Multan Gift Box">Quick View</button></div>
+        </div>
+        <div class="card__body">
+          <p class="card__cat">Curated · Premium Crate</p>
+          <h3 class="card__name">Multan Gift Box</h3>
+          <div class="card__stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><span>5.0</span></div>
+          <div class="card__foot"><div class="card__price">Rs 2,990 <small>/ box</small></div><button class="card__add magnetic" data-magnetic="0.25" data-add="Multan Gift Box" aria-label="Add Gift Box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= WHY CHOOSE US ========================= -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="section__head center">
+      <span class="eyebrow" data-reveal>The Multanpoint Difference</span>
+      <h2 class="section__title" data-split>Why Choose Us</h2>
+      <div class="ornay"><img src="assets/ornament.svg" alt="" aria-hidden="true" data-reveal /></div>
+    </div>
+    <div class="feat-grid" data-reveal-group>
+      <div class="feat" data-reveal-item>
+        <div class="feat__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C7 7 7 12 12 22 17 12 17 7 12 2Z"/><path d="M12 22V8"/></svg></div>
+        <h3>Ultra-Quality</h3>
+        <p>Only the finest fruit makes the box — every mango is hand-graded for size, blush and ripeness.</p>
+      </div>
+      <div class="feat" data-reveal-item>
+        <div class="feat__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v2M5.6 5.6l1.4 1.4M3 12h2M19 12h2M17 7l1.4-1.4M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"/></svg></div>
+        <h3>Sun-Ripened</h3>
+        <p>Left on the tree under the Multan sun until naturally sweet — never gas-ripened, never rushed.</p>
+      </div>
+      <div class="feat" data-reveal-item>
+        <div class="feat__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18H21V9h-4l-3-4H5Z"/><circle cx="8" cy="18" r="1.8"/><circle cx="18" cy="18" r="1.8"/></svg></div>
+        <h3>Free Shipment</h3>
+        <p>Packed within hours of harvest and shipped <b>free across all of Pakistan</b> in protective crates.</p>
+      </div>
+      <div class="feat" data-reveal-item>
+        <div class="feat__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 8 8 8 8s8-3 8-8V6Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>Quality Guaranteed</h3>
+        <p>Not delighted with your mangoes? We replace the box — no questions asked.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= HERITAGE / STORY ========================= -->
+<section class="section" id="story">
+  <div class="container story">
+    <div class="story__media" data-reveal>
+      <img class="scene" src="assets/orchard.svg" alt="Multan mango orchard with the city's famous shrine on the horizon" loading="lazy" />
+      <img class="story__dome" src="assets/dome.svg" alt="" aria-hidden="true" />
+      <div class="story__est"><b>Multan</b><span>City of Mangoes</span></div>
+    </div>
+    <div class="story__copy">
+      <span class="eyebrow" data-reveal>Our Roots</span>
+      <h2 class="section__title" data-split>Born in the City of Saints</h2>
+      <p class="section__sub" data-reveal>For centuries, the sun-baked soil of Multan has grown the sweetest mangoes on earth. Multanpoint carries that legacy forward — bringing the ultra-quality fruit and reliable service of our city straight to your home.</p>
+      <ul class="story__list" data-reveal-group>
+        <li data-reveal-item><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Rooted in Multan</b><p>Sourced from the heartland orchards that made Pakistani mangoes world-famous.</p></div></li>
+        <li data-reveal-item><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Direct from the farmer</b><p>No middlemen — fairer prices for growers, fresher fruit for you.</p></div></li>
+        <li data-reveal-item><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Taste · Health · Versatility</b><p>Naturally grown, naturally ripened — the way mangoes are meant to be.</p></div></li>
+      </ul>
+      <div style="margin-top:30px"><a href="#contact" data-scroll class="btn btn--dark magnetic">Discover Our Story</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= STATS ========================= -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="stats" data-reveal>
+      <div class="stats__grid">
+        <div class="stat"><b><span data-count="86" data-suffix="K+">0</span></b><span>Community Followers</span></div>
+        <div class="stat"><b><span data-count="25000" data-suffix="+">0</span></b><span>Boxes Delivered</span></div>
+        <div class="stat"><b><span data-count="30" data-suffix="+">0</span></b><span>Cities Served</span></div>
+        <div class="stat"><b><span data-count="100" data-suffix="%">0</span></b><span>Free Shipment</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= HOW WE HARVEST ========================= -->
+<section class="section">
+  <div class="container">
+    <div class="section__head center">
+      <span class="eyebrow" data-reveal>From Tree To Table</span>
+      <h2 class="section__title" data-split>How We Deliver</h2>
+      <div class="ornay"><img src="assets/ornament.svg" alt="" aria-hidden="true" data-reveal /></div>
+    </div>
+    <div class="harvest" data-reveal-group>
+      <div class="hv" data-reveal-item><div class="hv__num"></div><h3>Hand-Picked at Dawn</h3><p>Cooler morning hours protect the fruit and lock in aroma.</p></div>
+      <div class="hv" data-reveal-item><div class="hv__num"></div><h3>Graded by Eye</h3><p>Each mango is inspected for size, blush and ripeness.</p></div>
+      <div class="hv" data-reveal-item><div class="hv__num"></div><h3>Gently Packed</h3><p>Nestled in protective trays so they arrive flawless.</p></div>
+      <div class="hv" data-reveal-item><div class="hv__num"></div><h3>Shipped Free</h3><p>Delivered fast and free across Pakistan at peak freshness.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= DELIVERY CITIES ========================= -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="cities" data-reveal>
+      <h3>We Deliver — Free — All Over Pakistan</h3>
+      <p>From our orchards in Multan to your doorstep, anywhere in the country.</p>
+      <div class="cities__row">
+        <span class="city-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg> Multan</span>
+        <span class="city-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg> Lahore</span>
+        <span class="city-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg> Karachi</span>
+        <span class="city-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg> Islamabad</span>
+        <span class="city-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg> Faisalabad</span>
+        <span class="city-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg> Rawalpindi</span>
+        <span class="city-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> &amp; Everywhere Else</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= SEASON COUNTDOWN ========================= -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="count-wrap" id="countdown" data-target="2026-09-30T23:59:59" data-reveal>
+      <span class="eyebrow" style="color:#F3D770">Limited Harvest</span>
+      <h2 class="section__title" style="color:#fff;margin-top:14px">Mango Season Ends In</h2>
+      <p style="max-width:46ch;margin:14px auto 0;color:rgba(251,246,233,.85)">Fresh mangoes are seasonal. Once the orchard rests, they're gone until next summer.</p>
+      <div class="count-units">
+        <div class="cu"><b id="cd-d">00</b><span>Days</span></div>
+        <div class="cu"><b id="cd-h">00</b><span>Hours</span></div>
+        <div class="cu"><b id="cd-m">00</b><span>Minutes</span></div>
+        <div class="cu"><b id="cd-s">00</b><span>Seconds</span></div>
+      </div>
+      <div style="margin-top:34px"><a href="#shop" data-scroll class="btn btn--primary magnetic">Order Before It Ends</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= GALLERY (horizontal scroll) ========================= -->
+<section class="gallery-h section" id="gallery" style="padding-bottom:clamp(60px,8vw,110px)">
+  <div class="container">
+    <div class="section__head" style="margin-bottom:34px">
+      <span class="eyebrow" data-reveal>Inside The Orchard</span>
+      <h2 class="section__title" data-split>Gallery</h2>
+    </div>
+  </div>
+  <div class="gallery-track" id="galleryTrack">
+    <figure class="g-item"><img class="scene" src="assets/orchard.svg" alt="" loading="lazy" /><figcaption>Golden-Hour Groves</figcaption></figure>
+    <figure class="g-item"><img class="scene" src="assets/orchard.svg" alt="" loading="lazy" style="filter:hue-rotate(-12deg)" /><figcaption>Morning Harvest</figcaption></figure>
+    <figure class="g-item"><img class="scene" src="assets/orchard.svg" alt="" loading="lazy" style="filter:hue-rotate(18deg) saturate(1.1)" /><figcaption>Heavy With Fruit</figcaption></figure>
+    <figure class="g-item"><img class="scene" src="assets/orchard.svg" alt="" loading="lazy" style="filter:hue-rotate(-26deg) brightness(1.05)" /><figcaption>Crates at Dawn</figcaption></figure>
+    <figure class="g-item"><img class="scene" src="assets/orchard.svg" alt="" loading="lazy" style="filter:saturate(1.2)" /><figcaption>The City of Mangoes</figcaption></figure>
+  </div>
+</section>
+
+<!-- ========================= REVIEWS ========================= -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="section__head center">
+      <span class="eyebrow" data-reveal>Word Of Mouth</span>
+      <h2 class="section__title" data-split>Loved By Customers</h2>
+    </div>
+  </div>
+  <div class="reviews-vp">
+    <div class="reviews-track" id="reviewsTrack">
+      <div class="review">
+        <div class="review__stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg></div>
+        <p>“The Chaunsa from Multanpoint are the sweetest I've had in years — they arrived perfectly ripe and beautifully packed. This is how mangoes should taste.”</p>
+        <div class="review__who"><span class="review__av">A</span><div><b>Ayesha K.</b><span>Karachi</span></div></div>
+      </div>
+      <div class="review">
+        <div class="review__stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg></div>
+        <p>“Ordered a gift box for my parents in Lahore. They called to say it was the best mango they'd ever received. Flawless service and free delivery.”</p>
+        <div class="review__who"><span class="review__av">B</span><div><b>Bilal R.</b><span>Lahore</span></div></div>
+      </div>
+      <div class="review">
+        <div class="review__stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg></div>
+        <p>“You can taste the Multan sun in every bite. Rich, aromatic and fresh — we've ordered three times this season already.”</p>
+        <div class="review__who"><span class="review__av">S</span><div><b>Sana M.</b><span>Islamabad</span></div></div>
+      </div>
+      <div class="review">
+        <div class="review__stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .5-5.3 4.6L18 21l-6-3.7L6 21l1.3-6.9L2 9.5 9 9z"/></svg></div>
+        <p>“Fast, free delivery and unreal flavour. Multanpoint has earned a customer for life.”</p>
+        <div class="review__who"><span class="review__av">H</span><div><b>Hamza T.</b><span>Faisalabad</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= OUR PROMISE ========================= -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="section__head center">
+      <span class="eyebrow" data-reveal>Our Promise</span>
+      <h2 class="section__title" data-split>Standards We Never Break</h2>
+    </div>
+    <div class="promise" data-reveal-group>
+      <div class="feat" data-reveal-item>
+        <div class="feat__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 8 8 8 8s8-3 8-8V6Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>Freshness Guarantee</h3><p>Picked and shipped within 24 hours — or we make it right.</p>
+      </div>
+      <div class="feat" data-reveal-item>
+        <div class="feat__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C7 7 7 12 12 22 17 12 17 7 12 2Z"/></svg></div>
+        <h3>Naturally Grown</h3><p>No gas-ripening, ever — only the natural sweetness of the sun.</p>
+      </div>
+      <div class="feat" data-reveal-item>
+        <div class="feat__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18H21V9h-4l-3-4H5Z"/><circle cx="8" cy="18" r="1.8"/><circle cx="18" cy="18" r="1.8"/></svg></div>
+        <h3>Always Free Shipping</h3><p>Every order, every city in Pakistan — delivery is on us.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= FAQ ========================= -->
+<section class="section" id="contact" style="padding-top:0">
+  <div class="container">
+    <div class="section__head center">
+      <span class="eyebrow" data-reveal>Good To Know</span>
+      <h2 class="section__title" data-split>Frequently Asked</h2>
+    </div>
+    <div class="faq" data-reveal>
+      <div class="faq__item">
+        <button class="faq__q">Is shipping really free?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq__a"><p>Yes — Multanpoint offers <b>free shipment all over Pakistan</b> on every order. The price you see is the price you pay, delivered to your door.</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q">When is mango season?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq__a"><p>Our season runs from late May through September, variety by variety. Sindhri arrives first, with Chaunsa and Anwar Ratol peaking through the summer.</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q">Which cities do you deliver to?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq__a"><p>All of them — Multan, Lahore, Karachi, Islamabad, Faisalabad, Rawalpindi and everywhere in between, typically within 2–4 days of harvest.</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q">How do I place an order?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq__a"><p>Tap any “Order Now” button, or message us directly on WhatsApp at <b>0300 8431947</b>. We'll confirm your order and arrange free delivery.</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q">What if my mangoes arrive damaged?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq__a"><p>Every order is covered by our freshness guarantee. Send us a photo within 24 hours of delivery and we'll replace or refund it.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= NEWSLETTER ========================= -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="news" data-reveal>
+      <h2>Be First to the Harvest</h2>
+      <p>Join our list for early access to each season, exclusive gift-box drops and fresh stories from the orchards of Multan.</p>
+      <form data-newsletter>
+        <input type="email" required placeholder="Enter your email" aria-label="Email address" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ========================= FOOTER ========================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="#home" class="brand" data-scroll>
+          <span class="brand__chip"><img src="assets/logo.png" alt="Multanpoint logo" onerror="this.onerror=null;this.src='assets/mango.svg'" /></span>
+          <span class="brand__text"><b>Multan<span>point</span></b><small>Taste · Health · Versatility</small></span>
+        </a>
+        <p class="footer__about">Ultra-quality mangoes from the City of Saints, delivered farm-fresh with free shipment all over Pakistan.</p>
+        <div class="footer__contact">
+          <a href="https://wa.me/923008431947"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-3 2a11 11 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg> 0300 8431947</a>
+          <a href="mailto:khan.hashim09@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> khan.hashim09@gmail.com</a>
+          <a href="https://multanpoint.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg> multanpoint.com</a>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg> Multan, Punjab, Pakistan</span>
+        </div>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2 0-3 1-3 3v2H9v3h2v7h3v-7h2.5l.5-3H14v-1c0-.6.4-1 1-1Z"/></svg></a>
+          <a href="https://wa.me/923008431947" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.4A10 10 0 1 0 12 2Zm5.3 14c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.4-1.1-2.7s.7-1.9.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.2.1.4.1.6-.1l.7-.8c.2-.2.3-.2.6-.1l1.8.9c.3.1.5.2.5.4.1.2.1.9-.1 1.4Z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div class="footer__links"><a href="#home" data-scroll>Home</a><a href="#shop" data-scroll>Shop</a><a href="#story" data-scroll>Heritage</a><a href="#gallery" data-scroll>Gallery</a><a href="#contact" data-scroll>Contact</a></div>
+      </div>
+      <div>
+        <h4>Our Mangoes</h4>
+        <div class="footer__links"><a href="#shop" data-scroll>Chaunsa</a><a href="#shop" data-scroll>Sindhri</a><a href="#shop" data-scroll>Anwar Ratol</a><a href="#shop" data-scroll>Langra</a><a href="#shop" data-scroll>Gift Boxes</a></div>
+      </div>
+      <div>
+        <h4>Fresh in your inbox</h4>
+        <p class="footer__about" style="margin-top:0;margin-bottom:0">Seasonal updates &amp; offers from Multan.</p>
+        <form class="footer__news" data-newsletter>
+          <input type="email" required placeholder="Email address" aria-label="Email address" />
+          <button type="submit" aria-label="Subscribe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <span>© <span id="year"></span> <b>Multanpoint</b> · Taste · Health · Versatility. All rights reserved.</span>
+      <span>Made with care in Multan 🥭</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 14 6-6 6 6"/></svg>
+</button>
+
+<!-- Floating WhatsApp order button -->
+<a class="wa-float" id="waFloat" href="https://wa.me/923008431947?text=Assalam%20o%20Alaikum%20Multanpoint%2C%20I%27d%20like%20to%20order%20fresh%20mangoes." target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+  <span class="ping" aria-hidden="true"></span>
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.4A10 10 0 1 0 12 2Zm5.3 14c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.4-1.1-2.7s.7-1.9.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.2.1.4.1.6-.1l.7-.8c.2-.2.3-.2.6-.1l1.8.9c.3.1.5.2.5.4.1.2.1.9-.1 1.4Z"/></svg>
+  <span class="wa-txt">Order on WhatsApp</span>
+</a>
+
+<!-- Toasts -->
+<div class="toast-wrap" id="toasts" aria-live="polite"></div>
+
+<!-- ========================= SCRIPTS ========================= -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="main.js"></script>
+</body>
+</html>

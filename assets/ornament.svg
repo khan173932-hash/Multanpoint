@@ -1,0 +1,39 @@
+<svg viewBox="0 0 640 70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ornamental gold flourish">
+  <defs>
+    <linearGradient id="orG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#C2911E" stop-opacity="0"/>
+      <stop offset="22%" stop-color="#D9A93A"/>
+      <stop offset="50%" stop-color="#F3D770"/>
+      <stop offset="78%" stop-color="#D9A93A"/>
+      <stop offset="100%" stop-color="#C2911E" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#orG)" stroke-width="2.2" stroke-linecap="round">
+    <!-- baseline -->
+    <path d="M40 35 H600"/>
+    <!-- right vine scrolls -->
+    <path d="M360 35 C400 35 410 18 440 18 C470 18 472 40 452 42 C438 43 438 26 452 26"/>
+    <path d="M360 35 C400 35 410 52 440 52 C470 52 472 30 452 28"/>
+    <path d="M470 35 C510 35 520 20 548 20 C572 20 574 38 556 40"/>
+    <!-- left vine scrolls (mirror) -->
+    <path d="M280 35 C240 35 230 18 200 18 C170 18 168 40 188 42 C202 43 202 26 188 26"/>
+    <path d="M280 35 C240 35 230 52 200 52 C170 52 168 30 188 28"/>
+    <path d="M170 35 C130 35 120 20 92 20 C68 20 66 38 84 40"/>
+  </g>
+  <!-- buds -->
+  <g fill="url(#orG)">
+    <circle cx="600" cy="35" r="3.4"/>
+    <circle cx="40" cy="35" r="3.4"/>
+    <circle cx="556" cy="40" r="2.6"/><circle cx="84" cy="40" r="2.6"/>
+  </g>
+  <!-- center medallion / flower -->
+  <g transform="translate(320 35)">
+    <g fill="none" stroke="url(#orG)" stroke-width="2.2" stroke-linecap="round">
+      <path d="M0 -16 C7 -9 7 -3 0 0 C-7 -3 -7 -9 0 -16 Z"/>
+      <path d="M0 16 C7 9 7 3 0 0 C-7 3 -7 9 0 16 Z"/>
+      <path d="M-16 0 C-9 -7 -3 -7 0 0 C-3 7 -9 7 -16 0 Z"/>
+      <path d="M16 0 C9 -7 3 -7 0 0 C3 7 9 7 16 0 Z"/>
+    </g>
+    <circle cx="0" cy="0" r="3.6" fill="url(#orG)"/>
+  </g>
+</svg>

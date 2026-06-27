@@ -1,0 +1,75 @@
+<svg viewBox="0 0 380 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A premium ripe Multanpoint Chaunsa mango with a fresh-cut half">
+  <defs>
+    <radialGradient id="hmBody" cx="36%" cy="30%" r="82%">
+      <stop offset="0%"  stop-color="#FFF0AE"/>
+      <stop offset="30%" stop-color="#FFC93F"/>
+      <stop offset="64%" stop-color="#FF9A1E"/>
+      <stop offset="100%" stop-color="#ED660B"/>
+    </radialGradient>
+    <linearGradient id="hmBlush" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E83C12" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#D8350F" stop-opacity=".6"/>
+    </linearGradient>
+    <linearGradient id="hmLeaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6BBC5B"/>
+      <stop offset="55%" stop-color="#1B7A3A"/>
+      <stop offset="100%" stop-color="#0a3318"/>
+    </linearGradient>
+    <linearGradient id="hmSkin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F4720D"/>
+      <stop offset="100%" stop-color="#C03C08"/>
+    </linearGradient>
+    <radialGradient id="hmFlesh" cx="44%" cy="42%" r="62%">
+      <stop offset="0%"  stop-color="#FFE49A"/>
+      <stop offset="55%" stop-color="#FFC247"/>
+      <stop offset="100%" stop-color="#FF9A1E"/>
+    </radialGradient>
+    <radialGradient id="hmSeed" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#FFF6E2"/>
+      <stop offset="100%" stop-color="#F0D49A"/>
+    </radialGradient>
+  </defs>
+
+  <!-- soft ground shadow -->
+  <ellipse cx="196" cy="406" rx="132" ry="18" fill="#0c4a26" opacity=".18"/>
+
+  <!-- ===== WHOLE MANGO ===== -->
+  <g transform="rotate(-11 224 190)">
+    <!-- stem + leaf -->
+    <path d="M228 70 C232 50 244 40 258 38" fill="none" stroke="#6B4A1E" stroke-width="7" stroke-linecap="round"/>
+    <path d="M252 40 C286 26 318 40 322 66 C296 78 264 70 252 40 Z" fill="url(#hmLeaf)"/>
+    <path d="M260 48 C280 50 298 58 314 66" fill="none" stroke="#0a3318" stroke-width="2.4" stroke-opacity=".5" stroke-linecap="round"/>
+
+    <!-- body -->
+    <path d="M232 64
+             C306 66 346 124 344 192
+             C342 266 292 304 218 308
+             C150 312 110 270 108 206
+             C106 134 168 62 232 64 Z" fill="url(#hmBody)"/>
+    <!-- blush cheek -->
+    <path d="M232 64 C306 66 346 124 344 192 C342 266 292 304 218 308 C268 290 312 248 312 190 C312 132 286 84 232 64 Z" fill="url(#hmBlush)"/>
+    <!-- glossy highlights -->
+    <ellipse cx="176" cy="138" rx="42" ry="26" fill="#ffffff" opacity=".42" transform="rotate(-28 176 138)"/>
+    <ellipse cx="158" cy="118" rx="11" ry="7" fill="#ffffff" opacity=".78" transform="rotate(-28 158 118)"/>
+    <path d="M150 250 C190 276 246 274 286 244" fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <!-- ===== FRESH-CUT HALF (front-left, appetite cue) ===== -->
+  <g transform="rotate(-16 120 332)">
+    <ellipse cx="120" cy="332" rx="86" ry="64" fill="url(#hmSkin)"/>
+    <ellipse cx="120" cy="330" rx="71" ry="50" fill="url(#hmFlesh)"/>
+    <!-- seed -->
+    <ellipse cx="120" cy="330" rx="20" ry="36" fill="url(#hmSeed)"/>
+    <g stroke="#E7BE7C" stroke-width="2" stroke-opacity=".6" fill="none" stroke-linecap="round">
+      <path d="M120 296 C112 312 112 348 120 364"/>
+      <path d="M120 296 C128 312 128 348 120 364"/>
+    </g>
+    <!-- juicy fibers radiating into flesh -->
+    <g stroke="#FF9A1E" stroke-width="1.6" stroke-opacity=".4" stroke-linecap="round">
+      <path d="M140 318 L176 304"/><path d="M144 340 L184 344"/><path d="M138 356 L168 374"/>
+      <path d="M100 318 L66 302"/><path d="M96 340 L58 342"/><path d="M102 356 L74 376"/>
+    </g>
+    <!-- flesh highlight -->
+    <path d="M82 308 C100 296 140 296 160 312" fill="none" stroke="#FFF3CF" stroke-opacity=".7" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>

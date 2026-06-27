@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Multan shrine — heritage motif">
+  <defs>
+    <linearGradient id="dmG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F3D770"/>
+      <stop offset="55%" stop-color="#D9A93A"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#dmG)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <!-- finial -->
+    <path d="M120 8 L120 26"/>
+    <circle cx="120" cy="32" r="6" fill="url(#dmG)" stroke="none"/>
+    <!-- dome -->
+    <path d="M86 96 C86 58 112 40 120 40 C128 40 154 58 154 96 Z"/>
+    <path d="M96 96 C96 70 110 56 120 56 C130 56 144 70 144 96" stroke-opacity=".55"/>
+    <!-- drum band -->
+    <path d="M84 96 H156 L150 112 H90 Z"/>
+    <!-- tapering octagonal tomb body -->
+    <path d="M90 112 L78 210 H162 L150 112"/>
+    <!-- arched doorway -->
+    <path d="M112 210 L112 176 C112 166 128 166 128 176 L128 210" stroke-opacity=".75"/>
+    <!-- vertical pilasters -->
+    <path d="M104 120 L100 208 M136 120 L140 208" stroke-opacity=".5"/>
+    <!-- corner turrets -->
+    <path d="M66 210 L66 150 C66 142 78 142 78 150 L78 210"/>
+    <path d="M162 210 L162 150 C162 142 174 142 174 150 L174 210"/>
+    <path d="M66 150 C66 140 72 134 72 134 C72 134 78 140 78 150" stroke-opacity=".7"/>
+    <path d="M162 150 C162 140 168 134 168 134 C168 134 174 140 174 150" stroke-opacity=".7"/>
+    <!-- base platform -->
+    <path d="M56 210 H184 L188 226 H52 Z"/>
+    <path d="M48 226 H192 L196 244 H44 Z" stroke-opacity=".7"/>
+  </g>
+</svg>
